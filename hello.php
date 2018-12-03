@@ -1,14 +1,11 @@
 <?php
-require __DIR__ . '/vendor/autoload.php';
-use Twilio\TwiML;
+require_once 'vendor/autoload.php';
 
-// Start our TwiML response
-$response = new TwiML;
+use Twilio\Twiml;
 
-// Read a message aloud to the caller
-$response->say(
-    "Thank you for calling! Have a great day.", 
-    array("voice" => "alice")
-);
+$response = new Twiml;
+$response->say("Hello World!");
 
+header("content-type: text/xml");
 echo $response;
+?>
