@@ -3,8 +3,7 @@ require_once 'vendor/autoload.php';
 use Twilio\Twiml;
 use Twilio\Rest\Client;
 
-$account_sid = 'AC7d117c7d90a198a18ff5f1c28bc16dc7';
-$auth_token = '5da1203669803c005b0e70c16c131c08';
+require_once 'twilio-keys.php';
 
 $twilio_number = '+14804186393';
 
